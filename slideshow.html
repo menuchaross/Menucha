@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  h1 {
+    text-align: center;
+    font-size: 75px;
+  }
+  .bpic {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    width:25%;
+  }
+  </style>
+  <head>
+
+  </head>
+  <body>
+    <h1> These are some cool background pics!</h1>
+    <img src="file:///C:/Users/ROSSM20/Pictures/bpic1.jpeg" class = "bpic" id = "pic">
+    <button type="button" onclick="slide()">Click me to go to the next pic!</button>
+
+  </body>
+  <script>
+    //alert("Welcome to my website");
+    var slidePic = ['file:///C:/Users/ROSSM20/Pictures/bpic6.jpeg', 'file:///C:/Users/ROSSM20/Pictures/bpic5.jpeg', 'file:///C:/Users/ROSSM20/Pictures/bpic4.jpeg', 'file:///C:/Users/ROSSM20/Pictures/bpic3.jpeg', 'file:///C:/Users/ROSSM20/Pictures/bpic2.jpeg'];
+    function slide() {
+      var x = 0;
+
+      while (x < 5) {
+        x+=1;
+        document.getElementById("pic").src = slidePic[x];
+      }
+    }
+  </script>
+</html>
